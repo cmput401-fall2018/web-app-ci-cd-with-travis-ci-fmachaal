@@ -4,20 +4,18 @@
 <head>
   <meta charset="utf-8">
 
-  <title>This is a new title</title>
+  <title>Insert Title Here</title>
 
-
-  <!-- <link rel="stylesheet" href="style.css"> -->
 
 </head>
 
 <body style="background-color:powderblue;">
   <h1 style="color:red"; id="name">Name</h1>
-  <p style="color:green"; id="about">About</p>
-  <p style="color:green"; id="education">Education</p>
-  <p style="color:green"; id="skills">Skills</p>
-  <p style="color:green"; id="work">Work</p>
-  <p style="color:green"; id="contact">Contact</p>
+  <p id="about">About</p>
+  <p id="education">Education</p>
+  <p id="skills">Skills</p>
+  <p id="work">Work</p>
+  <p id="contact">Contact</p>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>
   $(window).on('load', function(){
@@ -27,6 +25,8 @@
           $("#about").text(data.data.attributes.about);
           $("#education").text(data.data.attributes.education);
           $("#skills").text(data.data.attributes.skills);
+          $("#work").text(data.data.attributes.work);
+          $("#contact").text(data.data.attributes.contact);
           // Complete consuming the API data and updating the work and contact sections
           // HINT: look at the above lines, jquery documentation, see what is the object returned
      

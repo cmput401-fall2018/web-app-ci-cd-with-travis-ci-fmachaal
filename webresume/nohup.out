@@ -1,0 +1,30 @@
+[01/Oct/2018 20:27:04] "GET / HTTP/1.1" 200 1303
+[01/Oct/2018 20:27:04] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:29:03] "GET / HTTP/1.1" 200 1303
+[01/Oct/2018 20:29:03] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:29:19] "GET / HTTP/1.1" 200 1303
+[01/Oct/2018 20:29:19] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:29:20] "GET / HTTP/1.1" 200 1303
+[01/Oct/2018 20:29:20] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:29:21] "GET / HTTP/1.1" 200 1303
+[01/Oct/2018 20:29:21] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:29:22] "GET / HTTP/1.1" 200 1303
+[01/Oct/2018 20:29:22] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:30:46] "GET / HTTP/1.1" 200 1303
+[01/Oct/2018 20:30:46] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:32:16] "GET / HTTP/1.1" 200 1305
+[01/Oct/2018 20:32:16] "GET /api/person/1/ HTTP/1.1" 200 245
+[01/Oct/2018 20:32:34] "GET /api/person/1/ HTTP/1.1" 200 245
+Invalid HTTP_HOST header: 'assignment2:8000'. You may need to add 'assignment2' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Oct/2018 07:06:24] "GET / HTTP/1.0" 400 59723
+Invalid HTTP_HOST header: 'assignment2:8000'. You may need to add 'assignment2' to ALLOWED_HOSTS.
+Bad Request: /
+[02/Oct/2018 13:37:49] "GET / HTTP/1.0" 400 59726
+Invalid HTTP_HOST header: '1.2.3.4:1234'. You may need to add '1.2.3.4' to ALLOWED_HOSTS.
+Bad Request: /
+[03/Oct/2018 02:58:00] "POST / HTTP/1.1" 400 60225
+[03/Oct/2018 20:08:55] "GET / HTTP/1.1" 200 1305
+Not Found: /favicon.ico
+[03/Oct/2018 20:08:55] "GET /favicon.ico HTTP/1.1" 404 2549
+[03/Oct/2018 20:08:55] "GET /api/person/1/ HTTP/1.1" 200 245
