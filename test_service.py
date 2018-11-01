@@ -11,7 +11,7 @@ class TestService(unittest.TestCase):
 
     def test_bad_random(self):
         with mock.patch('%s.open' % __name__, mock.mock_open(read_data='1\n2\n3\n4\n'), create=True):
-            result = service.bad_random()
+            result = self.service.bad_random()
             assert result == 3
         
     def test_divide(self):
