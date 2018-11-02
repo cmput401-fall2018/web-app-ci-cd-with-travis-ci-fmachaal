@@ -34,4 +34,5 @@ class TestService(unittest.TestCase):
         self.service.bad_random = mock.Mock(return_value = 6)
         assert self.service.complicated_function(5) == (15, 0)
 
-unittest.main()
+if __name__ == '__main__':
+    unittest.main()
