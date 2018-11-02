@@ -9,7 +9,7 @@ class TestService(unittest.TestCase):
     def setUp(self):
         self.service = Service()
     
-    @patch('self.Service.bad_random', return_value=9)
+    @patch('service.Service.bad_random', return_value=9)
     def test_bad_random(self, bad_random):
         self.assertEqual(bad_random(), 9)
         
