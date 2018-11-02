@@ -9,10 +9,9 @@ class TestService(unittest.TestCase):
     def setUp(self):
         self.service = Service()
 
-    def test_bad_random(self):
-        with mock.patch('%s.open' % __name__, mock.mock_open(read_data='1\n2\n3\n4\n'), create=True):
-            result = self.service.bad_random()
-            assert result == 3
+    @patch('service.Service.bad_random', return_value=9)
+	def test_bad_random(self, bad_random):
+		self.assertEqual(bad_random(), 9)
         
     def test_divide(self):
         self.service.bad_random = mock.Mock(return_value = 4)
